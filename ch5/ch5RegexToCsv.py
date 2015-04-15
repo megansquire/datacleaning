@@ -1,3 +1,4 @@
+# takes a log file from http://django-irc-logs.com/  and extracts pieces, saves as CSV
 import re
 import io
 
