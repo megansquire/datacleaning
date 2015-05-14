@@ -3,11 +3,11 @@ import csv
 import MySQLdb
 
 # Open database connection
-db = MySQLdb.connect(host="localhost",\
-    user="username", \
-    passwd="password", \
-    db="ferguson", \
-    use_unicode=True, \
+db = MySQLdb.connect(host="localhost",
+    user="username", 
+    passwd="password", 
+    db="ferguson", 
+    use_unicode=True, 
     charset="utf8")
 cursor = db.cursor()
 
