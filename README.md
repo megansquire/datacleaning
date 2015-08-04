@@ -1,2 +1,2 @@
 # datacleaning
-Code and examples for Data Cleaning book
+Code and examples for Clean Data book
