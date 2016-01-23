@@ -20,7 +20,7 @@ cursor1 = db.cursor()
 # this is a hack to get around Python not allowing me to execute dynamic tables
 # reference: http://stackoverflow.com/questions/26497846/python-mysql-parameter-queries-for-dynamic-table-names
 
-tableList = [#'SELECT count(Id), min(Id), max(Id) FROM badges',
+tableList = ['SELECT count(Id), min(Id), max(Id) FROM badges',
     'SELECT count(Id), min(Id), max(Id) FROM comments',
     'SELECT count(Id), min(Id), max(Id) FROM posts',
     'SELECT count(Id), min(Id), max(Id) FROM post_history',
@@ -29,7 +29,7 @@ tableList = [#'SELECT count(Id), min(Id), max(Id) FROM badges',
     'SELECT count(Id), min(Id), max(Id) FROM users',
     'SELECT count(Id), min(Id), max(Id) FROM votes']
     
-testQueryList = [#'INSERT IGNORE INTO test_badges SELECT * FROM badges WHERE Id = %s',
+testQueryList = ['INSERT IGNORE INTO test_badges SELECT * FROM badges WHERE Id = %s',
     'INSERT IGNORE INTO test_comments SELECT * FROM comments WHERE Id = %s',
     'INSERT IGNORE INTO test_posts SELECT * FROM posts WHERE Id = %s',
     'INSERT IGNORE INTO test_post_history SELECT * FROM post_history WHERE Id = %s',
@@ -38,7 +38,7 @@ testQueryList = [#'INSERT IGNORE INTO test_badges SELECT * FROM badges WHERE Id 
     'INSERT IGNORE INTO test_users SELECT * FROM users WHERE Id = %s',
     'INSERT IGNORE INTO test_votes SELECT * FROM votes WHERE Id = %s']
     
-testCountList = [#'SELECT count(*) FROM test_badges',
+testCountList = ['SELECT count(*) FROM test_badges',
     'SELECT count(*) FROM test_comments',
     'SELECT count(*) FROM test_posts',
     'SELECT count(*) FROM test_post_history',
