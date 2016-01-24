@@ -7,9 +7,9 @@ password = sys.argv[1]
 tableTargetSize = 1000;
 
 # Open local database connection
-db = pymysql.connect(host='localhost',
-                     db='stackoverflow',
-                     user='',
+db = pymysql.connect(host='flossdata.syr.edu',
+                     db='stackoverflow_2016jan',
+                     user='megan',
                      passwd=password,
                      port=3306,
                      charset='utf8mb4',
