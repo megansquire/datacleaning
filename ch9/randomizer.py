@@ -65,10 +65,10 @@ for tableQuery in tableList:
     while j < tableTargetSize:
 
         r = random.randrange(tableMin,tableMax)
-        print("Iteration",j,":",r);
+        print("Iteration",j,":",r)
         
-        cursor1.execute(testQueryList[i],(r,));
-        cursor1.execute(testCountList[i]);
+        cursor1.execute(testQueryList[i],(r,))
+        cursor1.execute(testCountList[i])
         currentCount = cursor1.fetchone()[0]
         j = currentCount
         
